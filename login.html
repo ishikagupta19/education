@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="EZ__3_-removebg-preview.png" type=" ">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script defer src="loginid.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Montserrat:wght@100&family=Poiret+One&family=Seaweed+Script&family=Yellowtail&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
@@ -60,21 +61,26 @@
             <br>
             
             <div class="container services">
-                <div class="row my-5 text-center font-weight: bolder; font-family: 'Montserrat', sans-serif;">
+                <div class="row my-5  font-weight: bolder; font-family: 'Montserrat', sans-serif;">
+                  
                     <h6 style="font-weight: bolder; font-family: 'Montserrat', sans-serif; font-size: 20px;">Enter your Details:</h6>
-               <form action="">
+               <form action="log.html" onsubmit="return login()">
                 <br>
                 <div>
-                    <input type="text" name="" id="" class="ipbox" placeholder="NAME">
+                  <label style="font-size: 20px;"> NAME :</label>
+                    <input type="text" name="user" id="user" class="form-control" placeholder="NAME">
+                    <span id="username" class="text-danger" ></span>
                 </div>
                 <div>
-                    <input type="password" name="" id="" class="ipbox" placeholder="PASSWORD">
+                  <label style="font-size: 20px;"><br> <br> Password :</label>
+                    <input type="password" name="passd" id="passd" class="form-control" placeholder="PASSWORD">
+                    <span id="pwd1" class="text-danger" ></span>
                 </div>
                 <br>
                 <br>
                 <br>
-                <div>
-                    <button type="submit" class="btn btn-outline-light">LOGIN</button>
+                <div class="text-center">
+                    <button style="font-size: 25px;" type="submit" class="btn btn-outline-light">LOGIN</button>
                 </div>
                 <br>
             </form>
